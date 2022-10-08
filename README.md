@@ -20,3 +20,9 @@ I've already done <a href="https://raytracing.github.io/books/RayTracingInOneWee
 
 ## then:
 `build/inOneWeekend > results/inOneWeekend/image.ppm`
+
+## Antialiasing 
+
+## Diffuse 
+
+## Metal
