@@ -48,3 +48,5 @@ Here, we have a scene with one metal ball, two lambertian balls on a metal surfa
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/11lambertianmetal.jpg">
 
 ### Fuzzy Reflection
+
+For a fuzzy metal material, we add a vector in unit sphere to the scattered/reflected ray.
