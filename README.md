@@ -51,6 +51,8 @@ Here, we have a scene with one metal ball, two lambertian balls on a metal surfa
 
 For a fuzzy metal material, we add a vector in unit sphere to the scattered/reflected ray.
 
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/12fuzz.jpg">
+
 ## Refraction
 
 Snell's law state that for a incoming ray $R$ onto a surface with normal $\hat n$ making an angle $\theta$, and for a refracted ray $R'$ with $\theta'$:
@@ -88,3 +90,7 @@ Hence,
 $$\Rightarrow R_{\perp}' = \frac{\eta}{\eta'}(R + \cos\theta \hat n)$$
 
 $$\Rightarrow R_{\parallel}' = - \sqrt{1 - |R_{\perp}'|^2} \hat n$$
+
+We get the following image,
+
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/14dielectric_demo.jpg">
