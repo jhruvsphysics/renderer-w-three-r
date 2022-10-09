@@ -31,7 +31,7 @@ After antialiasing:
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/3antialiasing.jpg">
 
-## Diffuse 
+## Diffuse/Lambertian
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/diffuse.jpg">
 
