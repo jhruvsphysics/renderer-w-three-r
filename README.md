@@ -40,3 +40,5 @@ After antialiasing:
 One metal ball, two lambertian balls on a metal surface.
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/11lambertianmetal.jpg">
+
+### Fuzzy Reflection
