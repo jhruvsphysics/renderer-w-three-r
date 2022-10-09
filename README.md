@@ -33,11 +33,17 @@ After antialiasing:
 
 ## Diffuse/Lambertian
 
+In order to generate a random scattered rays at point p, we first get a vector in unit sphere via rejection method. We normalize that vector to sit on the boundary of unit sphere. Then,
+
+` p + normal_vec + random_unit_vector = scattered ray`
+
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/diffuse.jpg">
 
 ## Metal
 
-One metal ball, two lambertian balls on a metal surface.
+For a metal material, the scattered ray would be reflected.
+
+Here, we have a scene with one metal ball, two lambertian balls on a metal surface.
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/11lambertianmetal.jpg">
 
