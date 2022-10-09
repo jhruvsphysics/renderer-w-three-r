@@ -61,7 +61,7 @@ In order to get the refracted ray, we see that
 
 $$R' = R_{\perp}' + R_{\parallel}'$$
 
-Without loss of generality, assume the direction of $R_{\perp}'$ is $\hat x$ and that $|R'| = |R| = 1$.
+Without loss of generality, assume the direction of $R_{\perp}'$ is $\hat x$ and that $|R'| = |R| = 1$, they are unit directional vector.
 
 $$\Rightarrow R_{\perp}' = |R'|\sin\theta' \hat x$$
 
