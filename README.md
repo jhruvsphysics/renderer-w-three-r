@@ -50,3 +50,29 @@ Here, we have a scene with one metal ball, two lambertian balls on a metal surfa
 ### Fuzzy Reflection
 
 For a fuzzy metal material, we add a vector in unit sphere to the scattered/reflected ray.
+
+## Refraction
+
+Snell's law state that for a incoming ray $R$ onto a surface with normal $\hat n$ making an angle $\theta$, and for a refracted ray $R'$ with $\theta'$:
+
+$$\sin\theta' = \eta/\eta' \sin\theta$$
+
+In order to get the refracted ray, we see that 
+
+$$R' = R_{\perp}' + R_{\parallel}'$$
+
+Without loss of generality, assume the direction of $R_{\perp}'$ is $\hat x$ and that $|R'| = |R| = 1$.
+
+$$\Rightarrow R_{\perp}' = |R'|\sin\theta' \hat x$$
+
+$$\Rightarrow R_{\perp}' = |R|\frac{\eta}{\eta'}\sin\theta \hat x$$
+
+Note that, geometrically it's trivial to see that 
+
+$$|R|\sin\theta \hat x = R + \cos\theta \hat n$$
+
+Hence,
+
+$$\Rightarrow R_{\perp}' = \frac{\eta}{\eta'}(R + \cos\theta \hat n)$$
+
+$$\Rightarrow R_{\parallel}' = - \sqrt{1 - |R_{\perp}'|^2} \hat n$$
