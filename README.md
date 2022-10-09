@@ -91,6 +91,6 @@ $$\Rightarrow R_{\perp}' = \frac{\eta}{\eta'}(R + \cos\theta \hat n)$$
 
 $$\Rightarrow R_{\parallel}' = - \sqrt{1 - |R_{\perp}'|^2} \hat n$$
 
-We get the following image,
+We get the following image for $\eta' = 1.5$ (glass),
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/14dielectric_demo.jpg">
