@@ -71,6 +71,18 @@ Note that, geometrically it's trivial to see that
 
 $$|R|\sin\theta \hat x = R + \cos\theta \hat n$$
 
+Algebraically, we can use cross product to show this, where $\lambda$ is some constant:
+
+$$\lambda \hat x = (\hat n \times R) \times \hat n = R(\hat n \cdot \hat n) - (\hat n \cdot R)\hat n= R - (\hat n \cdot R)\hat n$$
+
+$$\Rightarrow \lambda^2 \hat x^2 = \lambda^2 = R^2 - 2(\hat n \cdot R)^2 + (\hat n \cdot R)^2$$
+
+$$\Rightarrow \lambda^2 = 1 - (\hat n \cdot R)^2 = 1 - \cos^2\theta = \sin^2\theta$$
+
+$$\Rightarrow \lambda = \sin\theta$$
+
+$$\therefore \sin\theta \hat x = R - (\hat n \cdot R)\hat n = R + \cos\theta \hat n$$
+
 Hence,
 
 $$\Rightarrow R_{\perp}' = \frac{\eta}{\eta'}(R + \cos\theta \hat n)$$
