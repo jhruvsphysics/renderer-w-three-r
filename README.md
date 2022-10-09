@@ -25,14 +25,14 @@ I've already done <a href="https://raytracing.github.io/books/RayTracingInOneWee
 
 Before antialiasing:
 
-<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/demo/2normalwground.jpg">
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/2normalwground.jpg">
 
 After antialiasing:
 
-<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/demo/3antialiasing.jpg">
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/3antialiasing.jpg">
 
 ## Diffuse 
 
-<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/demo/diffuse.jpg">
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/diffuse.jpg">
 
 ## Metal
