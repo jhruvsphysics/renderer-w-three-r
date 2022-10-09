@@ -23,6 +23,16 @@ I've already done <a href="https://raytracing.github.io/books/RayTracingInOneWee
 
 ## Antialiasing 
 
+Before antialiasing:
+
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/demo/2normalwground.jpg">
+
+After antialiasing:
+
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/demo/3antialiasing.jpg">
+
 ## Diffuse 
+
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/demo/diffuse.jpg">
 
 ## Metal
