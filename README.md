@@ -122,3 +122,11 @@ Glass has different reflectivity that varies with angle. We use Schlick Approxim
 If you're wondering what a real glass ball looks like (and what happens if you smash them):
 
 <a href="https://www.youtube.com/watch?v=8V5wjfAS3Do&ab_channel=HowRidiculous">watch this youtube video</a>
+
+### Hollow Glass
+
+This can be constructed either by adding a glass dielectric with negative radius inside another glass dielectric. This "flips" the surface normal. 
+
+But, you can also simply add another dielectric with refractive index of $1/1.5$ inside another glass ball.
+
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/24hollowglass_demo.jpg">
