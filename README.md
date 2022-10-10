@@ -21,6 +21,8 @@ I've already done <a href="https://raytracing.github.io/books/RayTracingInOneWee
 ## then:
 `build/inOneWeekend > results/inOneWeekend/image.ppm`
 
+---
+
 ## Antialiasing 
 
 Before antialiasing:
@@ -31,6 +33,8 @@ After antialiasing:
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/3antialiasing.jpg">
 
+---
+
 ## Diffuse/Lambertian
 
 In order to generate a random scattered rays at point p, we first get a vector in unit sphere via rejection method. We normalize that vector to sit on the boundary of unit sphere. Then,
@@ -38,6 +42,8 @@ In order to generate a random scattered rays at point p, we first get a vector i
 ` p + normal_vec + random_unit_vector = scattered ray`
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/diffuse.jpg">
+
+---
 
 ## Metal
 
@@ -52,6 +58,8 @@ Here, we have a scene with one metal ball, two lambertian balls on a metal surfa
 For a fuzzy metal material, we add a vector in unit sphere to the scattered/reflected ray.
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/12fuzz.jpg">
+
+---
 
 ## Refraction
 
@@ -94,3 +102,13 @@ $$\Rightarrow R_{\parallel}' = - \sqrt{1 - |R_{\perp}'|^2} \hat n$$
 We get the following image for $\eta' = 1.5$ (glass that always refracts),
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/14dielectric_demo.jpg">
+
+### Total Internal Reflection
+
+In reality, we have no solution to the refracted ray when
+
+$$\sin\theta' = \frac{\eta}{\eta'}\sin\theta > 1$$
+
+When this happend, we reflect the ray. 
+
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/17internalreflection_demo.jpg">
