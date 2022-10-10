@@ -45,8 +45,8 @@ int main() {
     auto material_center = make_shared<dielectric>(1.5);
     auto material_right_air_to_glass = make_shared<dielectric>(1.5);
     auto material_right_glass_to_air = make_shared<dielectric>(1.0/1.5);
-    auto material_ground  = make_shared<metal>(color(0.8, 0.6, 0.2), 0.3);
-    auto material_left   = make_shared<metal>(color(0.8, 0.8, 0.8), 1.0);
+    auto material_ground  = make_shared<metal>(color(0.8, 0.6, 0.2), 0.0);
+    auto material_left   = make_shared<metal>(color(0.8, 0.8, 0.8), 0.5);
 
     world.add(make_shared<sphere>(point3(0,0,-1), 0.25, material_center));
     world.add(make_shared<sphere>(point3(0.6,0,-1), 0.25, material_right_air_to_glass));
