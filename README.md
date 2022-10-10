@@ -130,3 +130,16 @@ This can be constructed either by adding a glass dielectric with negative radius
 But, you can also simply add another dielectric with refractive index of $1/1.5$ inside another glass ball.
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/24hollowglass_demo.jpg">
+
+
+## Positionable Camera
+
+We make changes to `camera.h` (Camera class) to include vertical field of view, look-from, look-at, in order to position the camera freely.
+
+Here, we position the camera at point3(-2,2,1) and it's looking at point3(0,0,-1) with vfov of 90 degrees:
+
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/28camera_demo.jpg">
+
+vfov of 20 degrees:
+
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/29camera_demo.jpg">
