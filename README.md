@@ -109,6 +109,12 @@ In reality, we have no solution to the refracted ray when
 
 $$\sin\theta' = \frac{\eta}{\eta'}\sin\theta > 1$$
 
-When this happend, we reflect the ray. 
+When this happend, we reflect the ray. It looks the same as before.
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/17internalreflection_demo.jpg">
+
+### Schlick Approximation
+
+Glass has different reflectivity that varies with angle. We use Schlick Approximation.
+
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/18schlickapprox_demo.jpg">
