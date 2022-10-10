@@ -131,6 +131,7 @@ But, you can also simply add another dielectric with refractive index of $1/1.5$
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/24hollowglass_demo.jpg">
 
+---
 
 ## Positionable Camera
 
@@ -143,3 +144,15 @@ Here, we position the camera at point3(-2,2,1) and it's looking at point3(0,0,-1
 vfov of 20 degrees:
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/29camera_demo.jpg">
+
+---
+
+## Defocus Blur
+
+Here are the results for defocus blur increasing aperture from top to bottom.
+
+We approximate a thin lens approximation by sending the rays to the scene originated from a disk with radius of aperture/2. Note that this involves having a focus distance which is different than a focal length.
+
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/33camera_demo.jpg">
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/38defocusnofd.jpg">
+<img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/39defocusnofd.jpg">
