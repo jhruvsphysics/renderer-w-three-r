@@ -118,3 +118,7 @@ When this happend, we reflect the ray. It looks the same as before.
 Glass has different reflectivity that varies with angle. We use Schlick Approximation.
 
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/18schlickapprox_demo.jpg">
+
+If you're wondering what a real glass ball looks like (and what happens if you smash them):
+
+<a href="https://www.youtube.com/watch?v=8V5wjfAS3Do&ab_channel=HowRidiculous">watch this youtube video</a>
