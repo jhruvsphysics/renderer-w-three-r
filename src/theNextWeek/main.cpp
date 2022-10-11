@@ -2,12 +2,14 @@
 
 #include "../../include/camera.h"
 #include "../../include/color.h"
+#include "bvh.h"
 #include "hittable_list.h"
 #include "moving_sphere.h"
 #include "sphere.h"
 #include "material.h"
 
 #include <iostream>
+
 
 hittable_list random_scene() {
     hittable_list world;
@@ -24,16 +26,15 @@ hittable_list random_scene() {
                 shared_ptr<material> sphere_material;
 
                 if (choose_mat < 0.8) {
-                    //center0(cen0), center1(cen1), time0(_time0), time1(_time1), radius(r), mat_ptr(m)
                     // diffuse
                     auto albedo = color::random() * color::random();
                     sphere_material = make_shared<lambertian>(albedo);
-                    auto center2 = center + vec3(0, random_double(0,.5), 0);
-                    world.add(make_shared<sphere>(center, center2, 0.0, 1.0, 0.2, sphere_material));
+                    auto center2 = center + vec3(0, random_double(0,.6), 0);
+                    world.add(make_shared<moving_sphere>(center, center2, 0.0, 1.0, 0.2, sphere_material));
                 } else if (choose_mat < 0.95) {
                     // metal
-                    auto albedo = color::random(0.5, 1);
-                    auto fuzz = random_double(0, 0.5);
+                    auto albedo = color::random(0.4, 1);
+                    auto fuzz = random_double(0, 0.6);
                     sphere_material = make_shared<metal>(albedo, fuzz);
                     world.add(make_shared<sphere>(center, 0.2, sphere_material));
                 } else {
@@ -54,7 +55,7 @@ hittable_list random_scene() {
     auto material3 = make_shared<metal>(color(0.7, 0.6, 0.5), 0.0);
     world.add(make_shared<sphere>(point3(4, 1, 0), 1.0, material3));
 
-    return world;
+    return hittable_list(make_shared<bvh_node> (world, 0.0, 1.0));
 }
 
 color ray_color(const ray& r, const hittable& world, int depth) {
