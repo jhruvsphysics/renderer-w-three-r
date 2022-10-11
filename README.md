@@ -156,3 +156,31 @@ We approximate a thin lens approximation by sending the rays to the scene origin
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/33camera_demo.jpg">
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/38defocusnofd.jpg">
 <img src="https://github.com/jhruvsphysics/renderer-w-three-r/blob/main/results/inOneWeekend/39defocusnofd.jpg">
+
+---
+
+## Final Image
+
+---
+
+# Ray Tracing The Next Week
+
+Please refer to <a href="https://raytracing.github.io/books/RayTracingTheNextWeek.html">Ray Tracing The Next Week</a>.
+
+## To run this:
+`g++ -Wall -std=c++14 src/theNextWeek/main.cpp -o build/theNextWeek`
+
+## then:
+`build/theNextWeek > results/theNextWeek/image.ppm`
+
+---
+
+## Motion Blur 
+
+We can add a motion blur. In order to do this, we need to store when shutter opens t0 and closes t1 for the camera class. Also, the ray needs to have time at which it fired as well.
+
+Here is the result of motion blur:
+
+---
+
+## Bounding Volume Hierarchies
